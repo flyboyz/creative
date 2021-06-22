@@ -1,0 +1,7 @@
+.idea
+/node_modules/
+/vendor/
+
+# Webpack files
+*.min.js
+*.min.css
