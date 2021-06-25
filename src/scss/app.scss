@@ -1,0 +1,52 @@
+//@import "~swiper/swiper.min.css";
+@import "~@fancyapps/fancybox/src/css/core";
+
+@import "vars";
+
+@import "header";
+@import "sidebar";
+@import "footer";
+@import "card";
+@import "hero";
+@import "single";
+
+body {
+  @apply select-none;
+}
+
+main {
+  @apply flex flex-col;
+  min-height: calc(100vh - 220px);
+}
+
+a {
+  outline: none;
+}
+
+.heading {
+  @apply mt-8 mb-12 font-slab text-center;
+  font-size: 52px;
+
+  span {
+    position: relative;
+    z-index: 5;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 160px;
+      height: 55px;
+      top: 30%;
+      left: -10%;
+      background: radial-gradient(circle, lightpink 3px, transparent 4px) 0 0/18px 18px repeat;
+      transform: rotate(-7deg);
+      opacity: .8;
+      z-index: -1;
+    }
+  }
+}
+
+.attraction-list {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4 pb-14 px-3 lg:p-0;
+}

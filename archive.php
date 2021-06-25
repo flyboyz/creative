@@ -10,7 +10,7 @@ get_header();
 		<?php
 		if ( have_posts() ):
 			?>
-            <div class="grid grid-cols-3">
+			<div class="attraction-list">
 				<?php
 				while ( have_posts() ):
 					the_post();

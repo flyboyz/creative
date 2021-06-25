@@ -6,8 +6,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
   entry: {
     app: './src/js/app.js',
-    main: './src/less/app.less',
-    tailwind: './src/less/tailwind.less',
+    main: './src/scss/app.scss',
+    tailwind: './src/scss/tailwind.scss',
   },
   output: {
     path: path.resolve(__dirname),
@@ -27,10 +27,10 @@ module.exports = {
         }]
       },
       {
-        test: /\.(le|c)ss$/,
+        test: /\.(scss|sass|css)$/,
         use: [{
           loader: MiniCssExtractPlugin.loader
-        }, 'css-loader', 'postcss-loader', 'less-loader']
+        }, 'css-loader', 'postcss-loader', 'sass-loader']
       },
       {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,

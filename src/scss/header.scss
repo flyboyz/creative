@@ -1,7 +1,6 @@
 .header {
-  display: flex;
+  @apply flex z-10;
   height: 100px;
-  z-index: 10;
 
   body.admin-bar & {
     top: 32px;
@@ -14,7 +13,7 @@
 
 .header-menu {
   li {
-    position: relative;
+    @apply relative;
     margin: 0 2vw;
 
     &.current-menu-item:after {
@@ -24,27 +23,23 @@
       height: 4px;
       left: 0;
       bottom: -7px;
-      background-color: @main;
+      background-color: $main;
     }
   }
 
   a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #7c7c7c;
+    @apply no-underline uppercase text-gray-500;
   }
 }
 
 .hamburger {
-  cursor: pointer;
-  position: relative;
+  @apply cursor-pointer relative;
   width: 24px;
   height: 18px;
 
   .bar {
-    position: relative;
+    @apply relative bg-black;
     height: 2px;
-    background-color: black;
 
     &_1 {
       top: 0;

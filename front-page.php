@@ -1,49 +1,34 @@
 <?php
 
-$attractions = get_posts( [
-	'post_type' => 'attraction',
+$attractions = new WP_Query( [
+	'post_type'      => 'attraction',
+	'posts_per_page' => - 1,
 ] );
 
 get_header();
-if ( have_posts() ):
-	?>
-    <div class="top-image">
-		<?php
-		the_post_thumbnail(); ?>
-    </div>
-	<?php
+if ( have_posts() ) {
 	the_post();
-endif;
+}
+get_template_part( 'template-parts/hero' );
 ?>
-    <div class="container mx-auto">
+	<div class="container mx-auto">
 		<?php
 		the_content(); ?>
-    </div>
-    <div class="container mx-auto">
-        <div class="heading"><span>Наши музеи</span></div>
-        <div class="grid grid-cols-3">
+	</div>
+	<div class="container mx-auto">
+		<div class="heading"><span>Наши музеи</span></div>
+		<div class="attraction-list">
 			<?php
-			foreach ( $attractions as $attraction ): ?>
-                <div class="card">
-					<?php
-					echo get_the_post_thumbnail( $attraction->ID, 'large',
-						[ 'class' => 'card__back' ] ) ?>
-                    <span class="card__title"><?php
-						echo $attraction->post_title ?></span>
-                </div>
-			<?php
-			endforeach; ?>
-        </div>
-    </div>
-    <div class="section">
-        <div class="heading"><span>Отзывы</span></div>
-    </div>
-    <div class="section">
-        <div class="heading"><span>Вопросы и ответы</span></div>
-    </div>
-    <div class="section section_no-padding map">
-        <div class="heading"><span>Контакты</span></div>
-        <img src="<?= get_template_directory_uri() ?>/images/map.png" alt="map">
-    </div>
+			while ( $attractions->have_posts() ) {
+				$attractions->the_post();
+				get_template_part( 'template-parts/content/attraction' );
+			}
+			wp_reset_postdata();
+			?>
+		</div>
+	</div>
 <?php
+get_template_part( 'template-parts/feedback' );
+get_template_part( 'template-parts/faq' );
+get_template_part( 'template-parts/contacts' );
 get_footer();

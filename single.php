@@ -1,55 +1,18 @@
 <?php
 
-$post_type = get_post_type();
 get_header();
 if ( have_posts() ):
+	get_template_part( 'template-parts/hero' );
 	?>
-    <div class="container container_fixed container_no-paddnig content-box">
-        <a href="<?= get_post_type_archive_link( $post_type ) ?>"
-           class="link-back icon icon_block icon-arrow icon-arrow_back">Вернуться
-            к
-            списку <?= get_post_type_labels( get_post_type_object( $post_type ) )->back_link ?></a>
-        <div class="details-card">
-            <div class="card">
-                <img class="card__image" src="<?php
-				the_post_thumbnail_url( 'large' ); ?>" alt="photo">
-                <div class="card__title"><?= the_title() ?></div>
-                <div class="card__mobile-row">
-                    <div class="card__subtitle"><?= $fields['short_description'] ?? $fields['type'] ?></div>
-                    <div class="card__actions">
-						<?php
-						if ( $fields['link'] ): ?>
-                            <a href="<?= $fields['link'] ?>" target="_blank"
-                               class="card__link icon icon-arrow">Перейти</a>
-						<?php
-						endif;
-						if ( 'vacancy' === $post_type ):
-							?>
-                            <a data-fancybox data-src="#VacancyModal"
-                               data-options='{"touch" : false}'
-                               href="javascript:;" class="button">Отправить
-                                резюме</a>
-                            <div id="VacancyModal" class="modal modal_black"
-                                 style="display: none;">
-                                <div class="modal__title">Заполните форму чтобы
-                                    отправить резюме
-                                </div>
-								<?= do_shortcode( '[wpforms id="291"]' ) ?>
-                            </div>
-						<?php
-						endif;
-						?>
-                    </div>
-                </div>
-            </div>
-            <div class="details-content">
-				<?php
-				the_content() ?>
-            </div>
-        </div>
-    </div>
+	<div class="age">Возрастное ограничение: <?php the_age(); ?></div>
+	<div class="content bg-main">
+		<div class="container mx-auto">
+			<?php the_content() ?>
+		</div>
+	</div>
+	<?php get_template_part( 'template-parts/feedback' ); ?>
+	<div class="heading"><span>Где находится <?php the_title() ?>?</span></div>
+	<img src="<?= get_template_directory_uri() ?>/images/map.png" alt="map" class="block">
 <?php
 endif;
 get_footer();
-
-

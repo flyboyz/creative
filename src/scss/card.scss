@@ -1,0 +1,34 @@
+.card {
+  @apply relative flex items-center font-slab rounded-xl overflow-hidden;
+
+  &:hover {
+    .card__image {
+      @apply transform scale-110;
+    }
+  }
+
+  &__image {
+    @apply h-full object-cover transition-all;
+  }
+
+  &__info {
+    @apply absolute h-full w-full flex flex-col justify-between p-4 uppercase text-2xl text-white;
+    background-image: linear-gradient(to top, black, fade-out($main, .75) 50%, black);
+  }
+
+  &__cost {
+    @apply flex items-end;
+
+    svg {
+      @apply inline-flex h-8 w-8 mr-1 fill-current;
+    }
+
+    span {
+      @apply flex h-8 pt-1;
+    }
+  }
+
+  &__title {
+    @apply font-bold;
+  }
+}

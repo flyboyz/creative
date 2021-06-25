@@ -1,0 +1,18 @@
+.hero {
+  @apply relative font-slab;
+  height: 700px;
+  max-height: 80vh;
+
+  img {
+    @apply h-full w-full object-cover;
+  }
+
+  &__content {
+    @apply absolute h-full w-full top-0 flex flex-col justify-center;
+    background-color: rgba(0, 0, 0, .4);
+  }
+
+  &__title {
+    @apply text-center text-4xl text-white;
+  }
+}

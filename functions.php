@@ -3,6 +3,10 @@
  * Theme functions and definitions
  */
 
+if ( ! class_exists( 'ACF' ) ) {
+	return;
+}
+
 /**
  * Initialize styles/scripts
  */
@@ -43,7 +47,7 @@ add_action( 'after_setup_theme', function () {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'responsive-embeds' );   // Gutenberg responsive embeds
 
-	add_image_size( 'square', 540, 540, true );
+	add_image_size( 'full-hd', 1920 );
 } );
 
 
@@ -127,6 +131,16 @@ function utm_inputs() {
 }
 
 add_shortcode( 'utm_inputs', 'utm_inputs' );
+
+
+function the_cost() {
+	echo get_field( 'pricelist' )['normal'] . "&#8381;";
+}
+
+
+function the_age() {
+	echo get_field( 'age' ) . "+";
+}
 
 
 /**
