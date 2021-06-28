@@ -1,4 +1,47 @@
 .footer {
   @apply py-5 text-white bg-main;
   height: 120px;
+
+  a {
+    &:hover {
+      @apply text-gray-200;
+    }
+  }
+
+  .socials {
+    @apply flex;
+
+    a {
+      @apply flex items-center justify-center mx-1 text-main bg-white transition-all;
+      width: 44px;
+      height: 44px;
+      border-radius: 50px;
+
+      &:hover {
+        @apply bg-gray-200 transform scale-110;
+
+        &.instagram {
+          color: #8a3ab9;
+        }
+
+        &.facebook {
+          color: #4267B2;
+        }
+
+        &.vk {
+          color: #2787F5;
+        }
+
+        &.ok {
+          color: #ed812b;
+        }
+      }
+    }
+
+    svg {
+      @apply fill-current;
+      width: 22px;
+      height: 22px;
+    }
+  }
 }

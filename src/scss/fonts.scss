@@ -1,0 +1,33 @@
+//@font-face {
+//  font-family: 'Peace Sans';
+//  src: url('../fonts/PeaceSans.eot');
+//  src: local('Peace Sans'), local('PeaceSans'),
+//  url('../fonts/PeaceSans.eot?#iefix') format('embedded-opentype'),
+//  url('../fonts/PeaceSans.woff') format('woff'),
+//  url('../fonts/PeaceSans.ttf') format('truetype');
+//  font-weight: normal;
+//  font-style: normal;
+//}
+
+//@font-face {
+//  font-family: 'Comfortaa';
+//  src: local('Comfortaa Light'), local('Comfortaa-Light'), url('../fonts/comfortaalight.woff2') format('woff2'), url('../fonts/comfortaalight.woff') format('woff'), url('../fonts/comfortaalight.ttf') format('truetype');
+//  font-weight: 300;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'Comfortaa';
+//  src: local('Comfortaa'), url('../fonts/comfortaa.woff2') format('woff2'), url('../fonts/comfortaa.woff') format('woff'), url('../fonts/comfortaa.ttf') format('truetype');
+//  font-weight: 400;
+//  font-style: normal;
+//}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../../fonts/comfortaabold.woff2'),
+  url('../../fonts/comfortaabold.woff'),
+  url('../../fonts/comfortaabold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}

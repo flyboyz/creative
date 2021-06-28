@@ -1,7 +1,9 @@
 //@import "~swiper/swiper.min.css";
 @import "~@fancyapps/fancybox/src/css/core";
+//@import "../../fonts/fonts.css";
 
 @import "vars";
+@import "fonts";
 
 @import "header";
 @import "sidebar";
@@ -9,6 +11,7 @@
 @import "card";
 @import "hero";
 @import "single";
+@import "faq";
 
 body {
   @apply select-none;
@@ -24,7 +27,7 @@ a {
 }
 
 .heading {
-  @apply mt-8 mb-12 font-slab text-center;
+  @apply mt-8 mb-12 font-heading text-center;
   font-size: 52px;
 
   span {

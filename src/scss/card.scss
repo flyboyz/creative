@@ -1,5 +1,5 @@
 .card {
-  @apply relative flex items-center font-slab rounded-xl overflow-hidden;
+  @apply relative flex items-center font-heading rounded-xl overflow-hidden;
 
   &:hover {
     .card__image {
@@ -24,7 +24,8 @@
     }
 
     span {
-      @apply flex h-8 pt-1;
+      @apply flex h-8;
+      padding-top: 4px
     }
   }
 

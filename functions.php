@@ -19,8 +19,6 @@ function add_theme_scripts() {
 
 	wp_enqueue_style( 'roboto',
 		"{$googleFontsURI}&family=Roboto:wght@400;600" );
-	wp_enqueue_style( 'roboto-slab',
-		"{$googleFontsURI}&family=Roboto+Slab:wght@400;600" );
 
 	wp_enqueue_style( 'main', "$templateUri/css/main.min.css", [], $version );
 	wp_enqueue_style( 'tailwind', "$templateUri/css/tailwind.min.css", [],

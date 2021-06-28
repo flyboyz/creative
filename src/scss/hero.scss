@@ -1,5 +1,5 @@
 .hero {
-  @apply relative font-slab;
+  @apply relative font-heading;
   height: 700px;
   max-height: 80vh;
 
@@ -9,6 +9,7 @@
 
   &__content {
     @apply absolute h-full w-full top-0 flex flex-col justify-center;
+    font-family: 'Peace Sans';
     background-color: rgba(0, 0, 0, .4);
   }
 

@@ -28,7 +28,7 @@ module.exports = {
     fontFamily: {
       'display': ['Oswald'],
       'body': ['Roboto'],
-      'slab': ['Roboto  Slab'],
+      'heading': ['Comfortaa'],
     },
     extend: {},
   },
