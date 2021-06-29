@@ -1,5 +1,4 @@
 const path = require('path')
-const webpack = require('webpack')
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -28,12 +27,10 @@ module.exports = {
       },
       {
         test: /\.(scss|sass|css)$/,
-        use: [{
-          loader: MiniCssExtractPlugin.loader
-        }, 'css-loader', 'postcss-loader', 'sass-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
       },
       {
-        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        test: /\.(ico|jpg|jpeg|png|gif|webp|svg)(\?.*)?$/,
         use: {
           loader: 'file-loader',
           options: {
@@ -46,11 +43,6 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'css/[name].min.css'
-    }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
     })
   ]
 }

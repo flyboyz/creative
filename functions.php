@@ -17,14 +17,12 @@ function add_theme_scripts() {
 
 	$googleFontsURI = 'https://fonts.googleapis.com/css2?display=swap';
 
-	wp_enqueue_style( 'roboto',
-		"{$googleFontsURI}&family=Roboto:wght@400;600" );
+	wp_enqueue_style( 'roboto', "{$googleFontsURI}&family=Roboto:wght@400;600" );
+	wp_enqueue_style( 'comfortaa', "{$googleFontsURI}&family=Comfortaa:wght@400;600" );
 
 	wp_enqueue_style( 'main', "$templateUri/css/main.min.css", [], $version );
-	wp_enqueue_style( 'tailwind', "$templateUri/css/tailwind.min.css", [],
-		$version );
-	wp_enqueue_script( 'main', "$templateUri/js/app.min.js", [ 'jquery' ],
-		$version, true );
+	wp_enqueue_style( 'tailwind', "$templateUri/css/tailwind.min.css", [], $version );
+	wp_enqueue_script( 'main', "$templateUri/js/app.min.js", [], $version, true );
 
 	wp_localize_script( 'main', 'backend_data', [
 		'ajaxurl'      => admin_url( 'admin-ajax.php' ),

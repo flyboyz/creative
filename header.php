@@ -33,13 +33,13 @@ wp_body_open(); ?>
 			'container'      => '',
 			'menu_class'     => 'header-menu flex flex-1 justify-center mx-10',
 		] ); ?>
-        <div class="right-block">
-            <div class="hamburger" id="sidebarButton">
-                <div class="bar bar_1"></div>
-                <div class="bar bar_2"></div>
-                <div class="bar bar_3"></div>
-            </div>
-        </div>
+	    <div class="right-block">
+		    <div class="hamburger" id="sidebarButton" data-fancybox data-src="#sidebar">
+			    <div class="bar bar_1"></div>
+			    <div class="bar bar_2"></div>
+			    <div class="bar bar_3"></div>
+		    </div>
+	    </div>
     </div>
 </header>
 <main>

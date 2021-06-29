@@ -1,7 +1,5 @@
 'use strict'
 
-import '@fancyapps/fancybox'
-
 // import formsInit from './form'
 // import slider from './slider'
 import sidebar from './sidebar'

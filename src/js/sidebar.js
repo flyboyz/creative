@@ -1,16 +1,13 @@
 'use strict'
 
-const body = document.querySelector('body')
-const sidebarButton = $('#sidebarButton')
+import { Fancybox } from '@fancyapps/ui'
 
 export default () => {
-  if (sidebarButton !== null) {
-    $(sidebarButton).fancybox({
-      src: '#sidebar',
-      touch: false,
-      baseClass: 'fancybox-sidebar',
-      smallBtn: false,
-      toolbar: false,
-    })
-  }
+  // Fancybox.bind('#sidebarButton', {
+  //   src: '#sidebar',
+  //   touch: false,
+  //   baseClass: 'fancybox-sidebar',
+  //   smallBtn: false,
+  //   toolbar: false,
+  // })
 }
