@@ -13,16 +13,18 @@ if ( ! class_exists( 'ACF' ) ) {
 function add_theme_scripts() {
 	global $wp_query;
 	$templateUri = get_template_directory_uri();
-	$version     = wp_get_theme()->get( 'Version' );
 
 	$googleFontsURI = 'https://fonts.googleapis.com/css2?display=swap';
 
 	wp_enqueue_style( 'roboto', "{$googleFontsURI}&family=Roboto:wght@400;600" );
 	wp_enqueue_style( 'comfortaa', "{$googleFontsURI}&family=Comfortaa:wght@400;600" );
 
-	wp_enqueue_style( 'main', "$templateUri/css/main.min.css", [], $version );
-	wp_enqueue_style( 'tailwind', "$templateUri/css/tailwind.min.css", [], $version );
-	wp_enqueue_script( 'main', "$templateUri/js/app.min.js", [], $version, true );
+	wp_enqueue_style( 'main', "$templateUri/css/main.min.css", [],
+		filemtime( get_stylesheet_directory() . '/css/main.min.css' ) );
+	wp_enqueue_style( 'tailwind', "$templateUri/css/tailwind.min.css", [],
+		filemtime( get_stylesheet_directory() . '/css/tailwind.min.css' ) );
+	wp_enqueue_script( 'main', "$templateUri/js/app.min.js", [],
+		filemtime( get_stylesheet_directory() . '/js/app.min.js' ), true );
 
 	wp_localize_script( 'main', 'backend_data', [
 		'ajaxurl'      => admin_url( 'admin-ajax.php' ),
@@ -52,10 +54,9 @@ add_action( 'after_setup_theme', function () {
  */
 function register_menus() {
 	register_nav_menus( [
-		'header'        => 'Header Menu',
-		'sidebar'       => 'Sidebar Menu',
-		'footer_second' => 'Second footer Menu',
-		'footer_third'  => 'Third footer Menu',
+		'header'  => 'Header Menu',
+		'sidebar' => 'Sidebar Menu',
+		'footer'  => 'Footer Menu',
 	] );
 }
 

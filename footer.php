@@ -25,7 +25,7 @@
 		</div>
 		<?php
 		wp_nav_menu( [
-			'theme_location' => 'footer_third',
+			'theme_location' => 'footer',
 			'container'      => '',
 			'menu_class'     => 'footer-col',
 		] ); ?>
