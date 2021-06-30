@@ -1,0 +1,34 @@
+.ticket {
+  @apply relative flex;
+  width: 600px;
+
+  .left-side {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    transform: rotate(180deg);
+    background-color: #f471b6;
+    padding: 20px 10px;
+    font-size: 26px;
+    line-height: 1.15;
+    border-left: #ffffff dashed;
+    color: white;
+  }
+
+  &__content {
+    @apply top-0 left-0 flex flex-col flex-1 p-6 items-center bg-main text-white;
+
+    .title {
+      @apply uppercase text-xl border-b border-dashed border-white;
+    }
+  }
+}
+
+.ticket-promo {
+  @apply flex items-center m-8 p-2 px-6 border shadow-md bg-gray-200 text-lg text-blue-500;
+
+  svg {
+    @apply mr-6;
+    max-height: 40px;
+    max-width: 40px;
+  }
+}

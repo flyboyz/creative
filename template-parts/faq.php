@@ -2,7 +2,7 @@
 $faq = get_field( 'faq' );
 ?>
 <section class="faq container-lg mx-auto">
-	<div class="heading"><span>Вопросы и ответы</span></div>
+	<div class="heading"><span>Частые вопросы</span></div>
 	<div class="divide-y divide-dashed">
 		<?php foreach ( $faq as $item ): ?>
 			<article>
