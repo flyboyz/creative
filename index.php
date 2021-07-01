@@ -4,12 +4,14 @@ get_header();
 if ( have_posts() ):
 	the_post();
 	?>
-    <div class="container mx-auto">
-		<?php
-		the_title( '<h1 class="heading"><span>', '</span></h1>' );
-		the_content();
-		?>
-    </div>
+	<section>
+		<div class="container mx-auto">
+			<?php
+			the_title( '<h1 class="dots">', '</h1>' );
+			the_content();
+			?>
+		</div>
+	</section>
 <?php
 endif;
 get_footer();

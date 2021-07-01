@@ -1,4 +1,4 @@
-<div class="heading"><span>@evpa_park</span></div>
-<div class="container-lg">
-	Instagram content
-</div>
+<section>
+	<h2 class="dots">@evpa_park</h2>
+	<div>Instagram content</div>
+</section>

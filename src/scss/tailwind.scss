@@ -1,3 +1,31 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer base {
+  body {
+    @apply select-none;
+  }
+
+  blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre, ol, ul {
+    @apply text-lg;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-center;
+  }
+
+  h1 {
+    @apply mb-10 text-6xl;
+    line-height: 4.5rem;
+  }
+
+  h2, h3 {
+    @apply mb-8 text-5xl;
+    line-height: 4rem;
+  }
+
+  a {
+    outline: none;
+  }
+}

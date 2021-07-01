@@ -32,3 +32,15 @@
     max-width: 40px;
   }
 }
+
+.price-old {
+  @apply relative;
+
+  &::before {
+    @apply absolute h-1/2 top-0.5 border-b-2 border-main;
+    content: "";
+    width: 110%;
+    left: -5%;
+    transform: rotate(-9deg);
+  }
+}
