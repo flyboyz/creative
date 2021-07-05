@@ -21,9 +21,9 @@ body_class(); ?>>
 <?php
 wp_body_open(); ?>
 <header class="header bg-white shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-        <a href="/" class="flex items-center">
-            <img src="<?php
+	<div class="container flex justify-between items-center">
+		<a href="/" class="flex items-center">
+			<img src="<?php
 			echo get_template_directory_uri() ?>/images/logo.png"
                  class="max-h-20 mr-3" alt="logo">
         </a>

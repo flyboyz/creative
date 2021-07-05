@@ -1,6 +1,6 @@
 <div class="covid"
      style="background: rgba(0,0,0,.5) url('<?php echo get_template_directory_uri(); ?>/images/medical-bg.png')">
-	<div class="container mx-auto text-center">
+	<div class="container text-center">
 		<h3>Меры по предотвращению COVID 19</h3>
 		<ul>
 			<li>Все сотрудники объединения "ЕВПАПАРК" работают в масках;</li>

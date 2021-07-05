@@ -1,4 +1,4 @@
-<section class="faq container-lg mx-auto mt-10">
+<section class="faq container-lg mt-10">
 	<div class="ticket">
 		<div class="left-side">
 			<p>Единый<br>билет</p>

@@ -1,4 +1,4 @@
-<section class="container-lg mx-auto">
+<section class="container-lg">
 	<div class="ticket-promo">
 		<?php echo file_get_contents( get_template_directory() . '/images/icons/ticket.svg' ); ?>
 		<div>

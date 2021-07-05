@@ -5,7 +5,7 @@ $attractions = new WP_Query( [
 ] );
 ?>
 <section>
-	<div class="container mx-auto">
+	<div class="container">
 		<h2 class="dots">Наши музеи</h2>
 		<div class="cards-grid">
 			<?php

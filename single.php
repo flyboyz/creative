@@ -6,7 +6,7 @@ if ( have_posts() ):
 	?>
 	<div class="age">Возрастное ограничение: <?php the_age(); ?></div>
 	<div class="content bg-main">
-		<div class="container mx-auto">
+		<div class="container">
 			<?php the_content() ?>
 		</div>
 	</div>

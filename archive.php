@@ -4,7 +4,7 @@ $post_type = get_post_type();
 get_header();
 ?>
 	<section>
-		<div class="container mx-auto">
+		<div class="container">
 			<h2 class="dots">
 				<span><?= get_the_archive_title() ?></span>
 			</h2>

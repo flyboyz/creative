@@ -1,6 +1,6 @@
 </main>
 <footer class="footer">
-	<div class="container mx-auto flex justify-between items-center">
+	<div class="container flex justify-between items-center">
 		<div class="flex items-center">
 			<img src="<?php echo get_template_directory_uri() ?>/images/logo.png"
 			     class="max-h-20 mr-3" alt="logo">
