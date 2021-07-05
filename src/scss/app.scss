@@ -31,13 +31,13 @@ section {
     content: '';
     position: absolute;
     display: block;
-    width: 160px;
-    height: 55px;
-    top: 30%;
+    width: 240px;
+    height: 60px;
+    bottom: 10%;
     left: -10%;
-    background: radial-gradient(circle, lightpink 3px, transparent 4px) 0 0/18px 18px repeat;
+    background: radial-gradient(circle, lightpink 4px, transparent 4px) 0 0/20px 20px repeat;
     transform: rotate(-7deg);
-    opacity: .8;
+    opacity: .5;
     z-index: -1;
   }
 }

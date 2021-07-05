@@ -1,7 +1,5 @@
 .hero {
   @apply relative font-heading;
-  height: 700px;
-  max-height: 80vh;
 
   img {
     @apply h-full w-full object-cover;

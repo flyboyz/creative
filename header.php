@@ -31,7 +31,7 @@ wp_body_open(); ?>
 		wp_nav_menu( [
 			'theme_location' => 'header',
 			'container'      => '',
-			'menu_class'     => 'header-menu flex flex-1 justify-center mx-10',
+			'menu_class'     => 'header-menu',
 		] ); ?>
 	    <div class="right-block">
 		    <div class="hamburger" id="sidebarButton" data-fancybox data-src="#sidebar">
