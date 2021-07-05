@@ -5,7 +5,7 @@ get_header();
 ?>
 	<section>
 		<div class="container">
-			<h2 class="dots">
+			<h2 class="heading dots">
 				<span><?= get_the_archive_title() ?></span>
 			</h2>
 			<?php

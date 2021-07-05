@@ -1,0 +1,9 @@
+.companies {
+  @apply flex my-16 flex-wrap items-center justify-center;
+
+  img {
+    @apply m-4 opacity-80;
+    max-width: 150px;
+    max-height: 50px;
+  }
+}

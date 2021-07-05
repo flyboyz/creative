@@ -6,7 +6,7 @@ $attractions = new WP_Query( [
 ?>
 <section>
 	<div class="container">
-		<h2 class="dots">Наши музеи</h2>
+		<h2 class="heading dots">Наши музеи</h2>
 		<div class="cards-grid">
 			<?php
 			while ( $attractions->have_posts() ) {

@@ -33,9 +33,8 @@ module.exports = {
       main: colors.pink['400'],
     },
     fontFamily: {
-      'display': ['Oswald'],
-      'body': ['Roboto'],
-      'heading': ['Comfortaa'],
+      'body': ['Comfortaa'],
+      'heading': ['Peace Sans'],
     },
     extend: {},
   },

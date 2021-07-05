@@ -1,5 +1,5 @@
 .card {
-  @apply relative flex items-center font-heading rounded-xl overflow-hidden;
+  @apply relative flex items-center rounded-xl overflow-hidden;
 
   &:hover {
     .card__image {
@@ -12,7 +12,7 @@
   }
 
   &__info {
-    @apply absolute h-full w-full flex flex-col justify-between p-4 uppercase text-2xl text-white;
+    @apply absolute h-full w-full flex flex-col justify-between pt-4 pb-3 px-6 uppercase text-2xl text-white;
     background-image: linear-gradient(to top, black, fade-out($main, .75) 50%, black);
   }
 

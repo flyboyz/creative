@@ -7,7 +7,7 @@ if ( have_posts() ):
 	<section>
 		<div class="container">
 			<?php
-			the_title( '<h1 class="dots">', '</h1>' );
+			the_title( '<h1 class="heading dots">', '</h1>' );
 			the_content();
 			?>
 		</div>

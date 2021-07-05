@@ -4,11 +4,7 @@
 
 @layer base {
   body {
-    @apply select-none;
-  }
-
-  blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre, ol, ul {
-    @apply text-lg;
+    @apply font-body select-none;
   }
 
   h1, h2, h3, h4, h5, h6 {

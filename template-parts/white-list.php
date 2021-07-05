@@ -5,7 +5,7 @@ get_header();
 if ( have_posts() ): ?>
 	<section>
 		<div class="container">
-			<?php the_title( '<h1 class="dots">', '</h1>' ); ?>
+			<?php the_title( '<h1 class="heading dots">', '</h1>' ); ?>
 			<div class="bg-white">
 				<?php the_content(); ?>
 			</div>

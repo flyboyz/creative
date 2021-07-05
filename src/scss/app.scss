@@ -14,6 +14,7 @@
 
 @import "tickets";
 @import "covid";
+@import "companies";
 
 main {
   @apply flex flex-col;
@@ -21,23 +22,31 @@ main {
 }
 
 section {
-  @apply pt-10 pb-14;
+  //@apply pt-10 pb-14;
+
+  .heading {
+    @apply my-16;
+  }
+
+  .container > :last-child {
+    @apply mb-16;
+  }
 }
 
 .dots {
-  @apply relative w-max mx-auto;
+  @apply relative w-max mx-auto text-main;
 
   &:before {
     content: '';
     position: absolute;
     display: block;
-    width: 240px;
-    height: 60px;
-    bottom: 10%;
-    left: -10%;
-    background: radial-gradient(circle, lightpink 4px, transparent 4px) 0 0/20px 20px repeat;
-    transform: rotate(-7deg);
-    opacity: .5;
+    width: 85px;
+    height: 100px;
+    bottom: -1.5rem;
+    left: -1.5rem;
+    background: radial-gradient(circle, orange 4px, transparent 4px) 0 0/20px 20px repeat;
+    transform: rotate(-15deg);
+    opacity: .45;
     z-index: -1;
   }
 }

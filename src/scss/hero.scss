@@ -1,17 +1,37 @@
 .hero {
-  @apply relative font-heading;
+  @apply relative flex items-center;
 
   img {
     @apply h-full w-full object-cover;
   }
 
-  &__content {
-    @apply absolute h-full w-full top-0 flex flex-col justify-center;
-    font-family: 'Peace Sans';
-    background-color: rgba(0, 0, 0, .4);
+  &__container {
+    @apply container flex items-center;
+  }
+
+  &__overlay {
+    @apply absolute w-full left-0 py-8;
+    background-color: rgba(3, 154, 226, .5);
   }
 
   &__title {
     @apply text-center text-4xl text-white;
+  }
+
+  &__text {
+    @apply text-white text-yellow-300;
+    text-shadow: 2px 1px orange;
+
+    h1, h2, h3, p {
+      @apply text-left;
+    }
+
+    h1, h2, h3 {
+      @apply text-7xl;
+    }
+
+    p {
+      @apply text-3xl;
+    }
   }
 }

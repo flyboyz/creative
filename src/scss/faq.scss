@@ -9,11 +9,11 @@
     }
 
     header {
-      @apply mb-4 self-start font-heading bg-main text-xl;
+      @apply mb-4 self-start bg-main text-xl;
     }
 
     & > div {
-      @apply self-end font-heading bg-gray-200 text-lg;
+      @apply self-end bg-gray-200 text-lg;
     }
   }
 }
