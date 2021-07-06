@@ -1,6 +1,7 @@
 .header {
-  @apply flex z-10;
+  @apply relative flex;
   height: 100px;
+  z-index: 1100;
 
   body.admin-bar & {
     top: 32px;

@@ -1,5 +1,5 @@
 //@import "~swiper/swiper.min.css";
-//@import "~@fancyapps/ui/dist/fancybox.css";
+@import "@fancyapps/ui/dist/fancybox.css";
 
 @import "vars";
 @import "fonts";
@@ -37,11 +37,10 @@ section {
   }
 
   ul {
-    padding-left: 2rem;
-    list-style: disc;
+    @apply pl-8 list-disc;
 
     li::marker {
-      color: $main;
+      @apply text-main;
     }
   }
 }

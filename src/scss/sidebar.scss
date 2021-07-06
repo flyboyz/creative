@@ -1,11 +1,7 @@
 .sidebar {
-  display: none;
-  position: absolute;
+  @apply hidden absolute w-full right-0 bg-white;
   height: calc(100% - 100px);
-  width: 100%;
   top: 100px;
-  right: 0;
-  background-color: white;
 
   body.admin-bar & {
     top: 32px;
@@ -17,73 +13,15 @@
     }
   }
 
-  &__close-btn {
-    cursor: pointer;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 60px;
-    right: 50px;
-    transform: rotate(45deg);
-
-    &_inner {
-      top: 15px;
-    }
-
-    &::before,
-    &::after {
-      content: '';
-      display: block;
-      background-color: white;
-    }
-
-    &::before {
-      position: relative;
-      width: 100%;
-      height: 8px;
-      top: calc(50% - 4px);
-    }
+  ul {
+    @apply flex flex-col items-center text-3xl;
   }
 
-  .menu-item {
-    &:not(:last-child) {
-      margin-bottom: 36px;
-    }
-
-    &_icon {
-      a:before {
-        content: '';
-        display: inline-block;
-        width: 42px;
-        height: 42px;
-      }
-    }
-
-    &.current-menu-item a {
-      color: black;
-    }
-
-    a {
-      display: inline-flex;
-      align-items: center;
-      font-size: 26px;
-      font-weight: bold;
-      text-decoration: none;
-      text-transform: uppercase;
-
-      &:hover {
-        color: black;
-      }
-
-      &:before {
-        margin-right: 32px;
-      }
-    }
+  li {
+    @apply my-4;
   }
 }
 
-.fancybox-sidebar {
-  .fancybox-bg {
-    background: none;
-  }
+.fancybox__backdrop {
+  background: white;
 }
