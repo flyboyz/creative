@@ -7,10 +7,10 @@ $faq = get_field( 'faq' );
 		<div class="divide-y divide-dashed">
 			<?php foreach ( $faq as $item ): ?>
 				<article>
-					<header><?php echo $item['q']; ?></header>
-					<div>
-						<p><?php echo $item['a']; ?></p>
-					</div>
+					<?php
+					echo $item['q'] ? "<header>{$item['q']}</header>" : '';
+					echo $item['a'] ? "<p>{$item['a']}</p>" : '';
+					?>
 				</article>
 			<?php endforeach; ?>
 		</div>
