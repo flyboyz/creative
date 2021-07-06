@@ -1,4 +1,4 @@
 <section>
 	<h2 class="heading dots">@evpa_park</h2>
-	<div id="instagram-feed">Instagram content</div>
+	<?php echo do_shortcode( '[instagram-feed carouselarrows=true carouselpag=true]' ) ?>
 </section>
