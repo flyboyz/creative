@@ -14,7 +14,6 @@ function add_theme_scripts() {
 	$templateUri    = get_template_directory_uri();
 	$googleFontsURI = 'https://fonts.googleapis.com/css2?display=swap';
 
-	wp_enqueue_style( 'roboto', "{$googleFontsURI}&family=Roboto:wght@400;600" );
 	wp_enqueue_style( 'comfortaa', "{$googleFontsURI}&family=Comfortaa:wght@400;600" );
 
 	wp_enqueue_style( 'main', "$templateUri/css/main.min.css", [],
