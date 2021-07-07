@@ -1,6 +1,15 @@
 .ticket {
   @apply relative inline-flex mx-auto text-white;
 
+  &::before {
+    @apply absolute right-0 top-0 font-heading text-yellow-300;
+    content: '-28%';
+    color: #fcd34e;
+    font-size: 80px;
+    transform: translate(50%, -50%) rotate(15deg);
+    text-shadow: 3px 2px $main;
+  }
+
   &::after {
     @apply absolute bg-white;
     content: '';
