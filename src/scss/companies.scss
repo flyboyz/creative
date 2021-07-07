@@ -2,8 +2,12 @@
   @apply flex my-16 flex-wrap items-center justify-center;
 
   img {
-    @apply m-4 opacity-80;
+    @apply mx-6 opacity-80;
     max-width: 150px;
-    max-height: 50px;
+    max-height: 44px;
+
+    &:nth-child(3) {
+      max-width: 210px;
+    }
   }
 }
