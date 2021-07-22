@@ -38,7 +38,7 @@
   }
 
   &__calculator {
-    @apply flex items-baseline justify-between text-3xl font-heading;
+    @apply flex mt-6 items-baseline justify-between text-3xl font-heading;
 
     & > * {
       @apply mx-2 whitespace-nowrap;
@@ -52,6 +52,15 @@
     .count-input {
       @apply flex items-center justify-evenly pt-3 pb-2 border rounded-full;
       width: 140px;
+    }
+
+    .price-old {
+      @apply absolute text-yellow-300;
+      top: -2rem;
+
+      &::before {
+        @apply border-yellow-800;
+      }
     }
   }
 }
@@ -70,7 +79,7 @@
   @apply relative;
 
   &::before {
-    @apply absolute h-1/2 top-0.5 border-b-2 border-main;
+    @apply absolute h-1/2 top-0.5 border-b-2 border-black;
     content: "";
     width: 110%;
     left: -5%;

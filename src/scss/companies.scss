@@ -1,6 +1,15 @@
 .companies {
   @apply flex my-16 flex-wrap items-center justify-center;
 
+  a {
+    opacity: .8;
+    transition: .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   img {
     @apply mx-6 opacity-80;
     max-width: 150px;
