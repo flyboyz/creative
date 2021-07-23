@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let calc = document.querySelector('.ticket__calculator')
   let countInput = document.querySelector('.ticket__calculator .count')
   let count = parseInt(document.querySelector('.ticket__calculator .count').textContent)
-  let price = parseInt(document.querySelector('.ticket__calculator .price').textContent)
-  let sumInput = document.querySelector('.ticket__calculator .sum')
+  let price = parseInt(document.querySelector('.ticket__calculator .price span').textContent)
+  let sumInput = document.querySelector('.ticket__calculator .sum span')
 
   if (calc !== null) {
     calc.querySelectorAll('.minus, .plus').forEach((item) => {

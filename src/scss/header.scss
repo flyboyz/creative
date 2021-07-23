@@ -1,47 +1,51 @@
 .header {
-  @apply relative flex;
-  height: 100px;
+  @apply relative flex h-16;
   z-index: 1100;
 
-  body.admin-bar & {
-    top: 32px;
+  @screen sm {
+    height: 100px;
+  }
 
-    @media (max-width: 782px) {
-      top: 46px;
-    }
+  &__logo {
+    @apply max-h-12 sm:max-h-20 mr-3;
   }
 }
 
 .header-menu {
-  @apply hidden sm:flex flex-1 justify-center mx-10;
+  @apply hidden sm:flex flex-1 justify-end md:justify-center;
 
   li {
     @apply relative;
     margin: 0 2vw;
 
-    &.current-menu-item:after {
+    &:after {
+      @apply absolute left-0 bg-main;
       content: '';
-      position: absolute;
-      width: 100%;
       height: 4px;
-      left: 0;
       bottom: -7px;
-      background-color: $main;
+
+      &:hover {
+        @apply w-full;
+      }
+    }
+
+    &.current-menu-item:after {
+      @apply w-full;
     }
   }
 
   a {
-    @apply no-underline uppercase text-gray-500;
+    @apply no-underline uppercase;
   }
 }
 
 .hamburger {
-  @apply cursor-pointer relative;
+  @apply block sm:hidden cursor-pointer relative;
   width: 24px;
   height: 18px;
 
   .bar {
-    @apply relative bg-black;
+    @apply relative bg-gray-800;
     height: 2px;
 
     &_1 {

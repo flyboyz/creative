@@ -5,9 +5,7 @@ get_header();
 ?>
 	<section>
 		<div class="container">
-			<h2 class="heading dots">
-				<span><?= get_the_archive_title() ?></span>
-			</h2>
+			<h1 class="heading dots"><?= get_the_archive_title() ?></h1>
 			<?php
 			if ( have_posts() ):
 				?>

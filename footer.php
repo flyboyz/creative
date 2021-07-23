@@ -12,9 +12,9 @@
 					echo date( 'Y' ) ?></p>
             </div>
         </div>
-        <div class="socials">
-            <a href="https://www.instagram.com/?hl=ru" class="instagram"
-               target="_blank" rel="noopener noreferrer">
+	    <div class="socials">
+		    <a href="https://www.instagram.com/evpa_park/" class="instagram"
+		       target="_blank" rel="noopener noreferrer" title="Instagram">
 			    <?php
 				echo file_get_contents( get_template_directory() . '/images/icons/social-instagram.svg' ); ?>
             </a>

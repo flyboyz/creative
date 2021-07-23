@@ -1,8 +1,6 @@
-//@import "~swiper/swiper.min.css";
-@import "@fancyapps/ui/dist/fancybox.css";
-
-@import "vars";
 @import "fonts";
+
+$main: #f78fb3;
 
 @import "header";
 @import "sidebar";
@@ -46,7 +44,7 @@ section {
 }
 
 .dots {
-  @apply relative w-max mx-auto text-main;
+  @apply relative w-max mx-auto text-main-dark;
 
   &:before {
     content: '';

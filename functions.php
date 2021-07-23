@@ -47,9 +47,8 @@ add_action( 'after_setup_theme', function () {
  */
 function register_menus() {
 	register_nav_menus( [
-		'header'  => 'Header Menu',
-		'sidebar' => 'Sidebar Menu',
-		'footer'  => 'Footer Menu',
+		'main'   => 'Main Menu',
+		'footer' => 'Footer Menu',
 	] );
 }
 

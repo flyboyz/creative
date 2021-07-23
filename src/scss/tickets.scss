@@ -7,7 +7,7 @@
     color: #fcd34e;
     font-size: 80px;
     transform: translate(50%, -50%) rotate(15deg);
-    text-shadow: 3px 2px $main;
+    text-shadow: 3px 2px #de5485;
   }
 
   &::after {
@@ -54,12 +54,20 @@
       width: 140px;
     }
 
+    .price, .price-old, .sum, .count {
+      text-shadow: 2px 1px #de5485;
+    }
+
+    .price {
+      @apply text-yellow-300;
+    }
+
     .price-old {
-      @apply absolute text-yellow-300;
+      @apply absolute;
       top: -2rem;
 
       &::before {
-        @apply border-yellow-800;
+        @apply border-main-dark;
       }
     }
   }
@@ -79,10 +87,10 @@
   @apply relative;
 
   &::before {
-    @apply absolute h-1/2 top-0.5 border-b-2 border-black;
+    @apply absolute h-1/2 top-0.5 border-b-2 border-main-dark;
     content: "";
-    width: 110%;
-    left: -5%;
-    transform: rotate(-9deg);
+    width: 120%;
+    left: -10%;
+    transform: rotate(-7deg);
   }
 }

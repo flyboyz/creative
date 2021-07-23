@@ -1,27 +1,37 @@
 .sidebar {
-  @apply hidden absolute w-full right-0 bg-white;
-  height: calc(100% - 100px);
-  top: 100px;
+  @apply absolute w-full h-16 right-0 bg-white opacity-0;
+  height: calc(100% - 4rem);
+  top: 4rem;
+  transform: translateX(100%);
+  transition: .3s;
+
+  @screen sm {
+    height: calc(100% - 100px);
+    top: 100px;
+  }
+
+  body.show-sidebar & {
+    @apply opacity-100;
+    transform: translateX(0);
+  }
 
   body.admin-bar & {
-    top: 32px;
-    height: calc(100vh - 32px);
+    top: 132px;
+    height: calc(100vh - 132px);
 
     @media (max-width: 782px) {
-      top: 46px;
-      height: calc(100vh - 46px);
+      top: 146px;
+      height: calc(100vh - 146px);
     }
   }
 
-  ul {
-    @apply flex flex-col items-center text-3xl;
-  }
+  .menu {
+    @apply flex m-10 flex-col items-center text-3xl space-y-6;
 
-  li {
-    @apply my-4;
+    li {
+      &.current-menu-item {
+        @apply text-main-dark;
+      }
+    }
   }
-}
-
-.fancybox__backdrop {
-  background: white;
 }

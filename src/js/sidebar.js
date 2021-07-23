@@ -1,25 +1,16 @@
 'use strict'
 
-import { Fancybox } from '@fancyapps/ui'
+const sidebarClass = 'show-sidebar'
 
 export default () => {
-  let sidebar
+  let body = document.querySelector('body')
   let sidebarBtn = document.getElementById('sidebarButton')
 
   sidebarBtn.addEventListener('click', () => {
-    if (!sidebarBtn.classList.contains('opened')) {
-      sidebar = new Fancybox([{
-        src: document.getElementById('sidebar'),
-        type: 'inline',
-        closeButton: false,
-        animated: false,
-      }])
-
-      sidebarBtn.classList.add('opened')
-      sidebar.showLoading()
+    if (!body.classList.contains(sidebarClass)) {
+      body.classList.add(sidebarClass)
     } else {
-      sidebar.close()
-      sidebarBtn.classList.remove('opened')
+      body.classList.remove(sidebarClass)
     }
   })
 }
