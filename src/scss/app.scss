@@ -23,7 +23,11 @@ section {
   //@apply pt-10 pb-14;
 
   .heading {
-    @apply my-16;
+    @apply my-10;
+
+    @screen sm {
+      @apply my-16;
+    }
   }
 
   .container > :last-child {
@@ -47,20 +51,19 @@ section {
   @apply relative w-max mx-auto text-main-dark;
 
   &:before {
+    @apply absolute block opacity-40;
     content: '';
-    position: absolute;
-    display: block;
-    width: 85px;
-    height: 100px;
-    bottom: -1.5rem;
-    left: -1.5rem;
-    background: radial-gradient(circle, orange 4px, transparent 4px) 0 0/20px 20px repeat;
+    width: 45px;
+    height: 70px;
+    bottom: -1rem;
+    left: -1rem;
+    background: radial-gradient(circle, orange 3px, transparent 3px) 0 0/14px 14px repeat;
     transform: rotate(-15deg);
-    opacity: .45;
     z-index: -1;
-  }
-}
 
-.cards-grid {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4 pb-14 px-3 lg:p-0;
+    @screen sm {
+      width: 85px;
+      height: 100px;
+    }
+  }
 }

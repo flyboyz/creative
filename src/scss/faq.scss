@@ -1,18 +1,22 @@
 .faq {
   article {
-    @apply flex flex-col p-4 py-8;
+    @apply flex flex-col py-4 md:py-8;
 
     header, p {
-      @apply p-2 px-5 rounded-lg;
-      max-width: 70%;
+      @apply m-0 p-2 px-5 rounded-lg;
+      max-width: 90%;
+
+      @screen md {
+        max-width: 70%;
+      }
     }
 
     header {
-      @apply mb-4 self-start text-xl bg-main-light;
+      @apply mb-4 self-start md:text-xl bg-main-light;
     }
 
     p {
-      @apply self-end bg-gray-200 text-lg;
+      @apply self-end bg-gray-200 md:text-lg;
     }
   }
 }

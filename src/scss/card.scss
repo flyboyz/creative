@@ -1,3 +1,7 @@
+.cards-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-4 pb-14 px-3 lg:p-0;
+}
+
 .card {
   @apply relative flex items-center rounded-xl overflow-hidden;
 
@@ -12,7 +16,7 @@
   }
 
   &__info {
-    @apply absolute h-full w-full flex flex-col justify-between pt-4 pb-3 px-6 uppercase text-2xl text-white;
+    @apply absolute h-full w-full flex flex-col justify-between pt-4 pb-3 px-6 uppercase lg:text-2xl text-white;
     background-image: linear-gradient(to top, black, fade-out($main, .75) 50%, black);
   }
 

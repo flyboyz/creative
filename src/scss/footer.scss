@@ -1,6 +1,21 @@
 .footer {
   @apply py-5 text-white bg-main;
-  height: 120px;
+
+  &__col {
+    @apply flex flex-col items-center md:items-baseline;
+
+    &:nth-child(1) {
+      @apply order-1 md:order-none;
+    }
+  }
+
+  .container {
+    @apply grid gap-4 items-center justify-center md:justify-between;
+
+    @screen md {
+      grid-template-columns: repeat(3, auto);
+    }
+  }
 
   a {
     &:hover {

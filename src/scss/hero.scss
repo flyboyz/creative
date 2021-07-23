@@ -1,17 +1,21 @@
 .hero {
   @apply relative flex items-center;
 
-  img {
-    @apply h-full w-full object-cover;
-  }
-
   &__container {
     @apply container flex items-center;
   }
 
   &__overlay {
-    @apply absolute w-full left-0 py-8;
+    @apply absolute w-full left-0 py-4;
     background-color: rgba(3, 154, 226, .5);
+  }
+
+  &__image {
+    @apply w-full;
+
+    img {
+      @apply h-full w-full object-cover;
+    }
   }
 
   &__title {
@@ -27,11 +31,11 @@
     }
 
     h1, h2, h3 {
-      @apply text-7xl;
+      @apply text-4xl sm:text-7xl;
     }
 
     p {
-      @apply text-3xl;
+      @apply text-xl sm:text-3xl;
     }
   }
 }

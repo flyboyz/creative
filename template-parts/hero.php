@@ -1,6 +1,6 @@
 <div class="hero">
-	<div class="hero__image w-full aspect-w-7 aspect-h-3">
-		<?php the_post_thumbnail( 'full-hd', [ 'class' => 'card__image' ] ); ?>
+	<div class="hero__image aspect-w-3 sm:aspect-w-8 aspect-h-3">
+		<?php the_post_thumbnail( 'full-hd' ); ?>
 	</div>
 	<div class="hero__overlay">
 		<div class="hero__container">
