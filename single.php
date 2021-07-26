@@ -1,18 +1,17 @@
 <?php
-
 get_header();
 if ( have_posts() ):
 	get_template_part( 'template-parts/hero' );
 	?>
-	<div class="age">Возрастное ограничение: <?php the_age(); ?></div>
-	<div class="content bg-main">
+	<section class="content">
 		<div class="container">
 			<?php the_content() ?>
 		</div>
-	</div>
-	<?php get_template_part( 'template-parts/feedback' ); ?>
-	<div class="heading"><span>Где находится <?php the_title() ?>?</span></div>
-	<img src="<?= get_template_directory_uri() ?>/images/map.png" alt="map" class="block">
-<?php
+	</section>
+	<?php
+	get_template_part( 'template-parts/photo-gallery' );
+	get_template_part( 'template-parts/attractions' );
+	get_template_part( 'template-parts/ticket', 'main' );
+	get_template_part( 'template-parts/map' );
 endif;
 get_footer();

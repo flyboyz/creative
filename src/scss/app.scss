@@ -1,6 +1,7 @@
-@import "fonts";
-
 $main: #f78fb3;
+$main-light: #f8a5c2;
+
+@import "fonts";
 
 @import "header";
 @import "sidebar";
@@ -20,20 +21,18 @@ main {
 }
 
 section {
-  //@apply pt-10 pb-14;
+  @apply py-12;
 
-  .heading {
-    @apply my-10;
+  //.heading {
+  //  @apply my-10;
+  //
+  //  @screen sm {
+  //    @apply my-16;
+  //  }
+  //}
+}
 
-    @screen sm {
-      @apply my-16;
-    }
-  }
-
-  .container > :last-child {
-    @apply mb-16;
-  }
-
+.content {
   p, ul {
     @apply mb-4;
   }

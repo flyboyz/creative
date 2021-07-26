@@ -9,5 +9,5 @@ get_template_part( 'template-parts/covid' );
 get_template_part( 'template-parts/companies' );
 get_template_part( 'template-parts/faq' );
 get_template_part( 'template-parts/instagram' );
-get_template_part( 'template-parts/contacts' );
+get_template_part( 'template-parts/map' );
 get_footer();

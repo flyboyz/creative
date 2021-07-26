@@ -1,13 +1,15 @@
 'use strict'
 
 let calc = document.querySelector('.ticket__calculator')
-let countInput = document.querySelector('.ticket__calculator .count')
-let count = parseInt(document.querySelector('.ticket__calculator .count').textContent)
-let price = parseInt(document.querySelector('.ticket__calculator .price span').textContent)
-let sumInput = document.querySelector('.ticket__calculator .sum span')
 
 export default () => {
   if (calc !== null) {
+    let count = parseInt(document.querySelector('.ticket__calculator .count').textContent)
+
+    const countInput = document.querySelector('.ticket__calculator .count')
+    const sumInput = document.querySelector('.ticket__calculator .sum span')
+    const price = parseInt(document.querySelector('.ticket__calculator .price span').textContent)
+
     calc.querySelectorAll('.minus, .plus').forEach((item) => {
       item.addEventListener('click', (e) => {
         if (e.currentTarget.classList.contains('minus')) {

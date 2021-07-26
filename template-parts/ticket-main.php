@@ -5,7 +5,7 @@
 		</div>
 		<div class="ticket__content">
 			<p class="title">Выгодное предложение</p>
-			<div class="flex items-center">
+			<div class="flex p-4 items-center">
 				<img src="<?php
 				echo get_template_directory_uri() ?>/images/logo.png"
 				     class="ticket__logo" alt="ticket-logo">

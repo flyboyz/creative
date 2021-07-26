@@ -10,7 +10,11 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply max-w-full font-heading text-center;
+    @apply font-heading;
+  }
+
+  h1, h2, h3 {
+    @apply max-w-full text-center;
   }
 
   h1 {
@@ -18,8 +22,16 @@
     line-height: 4.5rem;
   }
 
-  h2, h3 {
+  h2 {
     @apply mb-10 text-3xl sm:text-5xl;
+  }
+
+  h3 {
+    @apply mb-8 text-2xl sm:text-4xl;
+  }
+
+  h4 {
+    @apply mb-6 text-xl sm:text-3xl;
   }
 
   a {

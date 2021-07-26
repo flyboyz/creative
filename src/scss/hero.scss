@@ -1,13 +1,15 @@
+$ticket-color: $main;
+
 .hero {
-  @apply relative flex items-center;
+  @apply relative flex items-center text-white;
 
   &__container {
-    @apply container flex items-center;
+    @apply container text-center;
   }
 
   &__overlay {
-    @apply absolute w-full left-0 py-4;
-    background-color: rgba(3, 154, 226, .5);
+    @apply absolute flex w-full h-full items-center left-0 py-4;
+    background-color: fade-out(gray, .5);
   }
 
   &__image {
@@ -19,12 +21,16 @@
   }
 
   &__title {
-    @apply text-center text-4xl text-white;
+    @apply font-heading text-center text-4xl sm:text-6xl uppercase;
+    text-shadow: 2px 1px #444444;
+
+    body.single-attraction & {
+      @apply mt-20;
+    }
   }
 
   &__text {
-    @apply text-white text-yellow-300;
-    text-shadow: 2px 1px #bd7a00;
+    text-shadow: 2px 1px #444444;
 
     h1, h2, h3, p {
       @apply text-left;
@@ -37,5 +43,32 @@
     p {
       @apply text-xl sm:text-3xl;
     }
+  }
+
+
+  &__cost {
+    @apply relative inline-flex h-16 items-center text-3xl;
+
+    &::before {
+      @apply relative h-full border-r-2 border-dashed border-white;
+      content: '';
+      width: 16px;
+      background-color: $ticket-color;
+    }
+
+    svg {
+      @apply w-auto h-full;
+      color: $ticket-color;
+    }
+
+    div {
+      @apply flex h-full pt-1 px-8 items-center;
+      background-color: $ticket-color;
+    }
+  }
+
+  &__age {
+    @apply mt-2 mb-10 text-xl text-center;
+    text-shadow: 2px 1px #444444;
   }
 }

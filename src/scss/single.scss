@@ -1,5 +1,13 @@
 .single {
   .age {
-    @apply text-center;
+    @apply container py-6 text-xl text-center;
+  }
+
+  .gallery {
+    @apply grid grid-cols-4 pt-0;
+
+    img {
+      @apply object-cover;
+    }
   }
 }

@@ -1,5 +1,5 @@
 <section>
-	<div class="container">
+	<div class="container content">
 		<h2 class="heading dots">Куда пойти в Евпатории?</h2>
 		<p>Представляем Вашему вниманию EVPAPARK - объединение музеев и аттракционов, развлекательного и обучающего
 			характера.</p>

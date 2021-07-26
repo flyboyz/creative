@@ -131,6 +131,10 @@ function the_age() {
 	echo get_field( 'age' ) . "+";
 }
 
+function get_attraction_gallery() {
+	return get_field( 'gallery' );
+}
+
 
 /**
  * System reconfiguration

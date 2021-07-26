@@ -1,0 +1,13 @@
+<svg viewBox="0 0 14 76" id="ticket-mask-sub-right" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <path id="bsa" d="M0 0h14v76H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="bsb" fill="#fff">
+            <use href="#bsa"/>
+        </mask>
+        <g fill="currentColor" mask="url(#bsb)">
+            <path d="M14 0v25C6.268 25 0 31.044 0 38.5S6.268 52 14 52v24h-502V52c7.732 0 14-6.044 14-13.5S-480.268 25-488 25V0H14z"/>
+        </g>
+    </g>
+</svg>

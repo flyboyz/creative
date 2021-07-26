@@ -8,8 +8,14 @@
 				<div class="hero__title">
 					<?php the_title() ?>
 				</div>
+				<div class="hero__age">
+					Возрастное ограничение: <?php the_age(); ?>
+				</div>
 				<div class="hero__cost">
-					<?php the_cost(); ?>
+					<div class="">
+						<?php the_cost(); ?>
+					</div>
+					<?php echo file_get_contents( get_template_directory() . '/images/icons/ticket-side.svg' ); ?>
 				</div>
 			<?php else: ?>
 				<div class="hero__text">
