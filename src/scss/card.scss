@@ -1,5 +1,5 @@
 .cards-grid {
-  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-4 pb-14 px-3 lg:p-0;
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-4;
 }
 
 .card {
@@ -16,8 +16,8 @@
   }
 
   &__info {
-    @apply absolute h-full w-full flex flex-col justify-between pt-4 pb-3 px-6 uppercase lg:text-2xl text-white;
-    background-image: linear-gradient(to top, black, fade-out($main, .75) 50%, black);
+    @apply absolute h-full w-full flex flex-col justify-between pt-4 pb-3 px-6 uppercase md:text-xl 2xl:text-2xl text-white;
+    background-image: linear-gradient(to top, #2323239c, transparent 50%, #2323239c);
   }
 
   &__cost {

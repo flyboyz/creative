@@ -6,9 +6,9 @@ if ( have_posts() ): ?>
 	<section>
 		<div class="container">
 			<?php the_title( '<h1 class="heading dots">', '</h1>' ); ?>
-			<div class="bg-white">
-				<?php the_content(); ?>
-			</div>
+		</div>
+		<div class="white-list content">
+			<?php the_content(); ?>
 		</div>
 	</section>
 <?php

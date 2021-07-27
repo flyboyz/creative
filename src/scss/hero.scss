@@ -21,7 +21,7 @@ $ticket-color: $main;
   }
 
   &__title {
-    @apply font-heading text-center text-4xl sm:text-6xl uppercase;
+    @apply font-heading text-center text-3xl sm:text-6xl uppercase;
     text-shadow: 2px 1px #444444;
 
     body.single-attraction & {
@@ -37,17 +37,17 @@ $ticket-color: $main;
     }
 
     h1, h2, h3 {
-      @apply text-4xl sm:text-7xl;
+      @apply text-4xl lg:text-7xl;
     }
 
     p {
-      @apply text-xl sm:text-3xl;
+      @apply text-xl lg:text-3xl;
     }
   }
 
 
   &__cost {
-    @apply relative inline-flex h-16 items-center text-3xl;
+    @apply relative inline-flex h-14 items-center text-3xl;
 
     &::before {
       @apply relative h-full border-r-2 border-dashed border-white;
@@ -68,7 +68,7 @@ $ticket-color: $main;
   }
 
   &__age {
-    @apply mt-2 mb-10 text-xl text-center;
+    @apply mt-2 mb-10 text-lg sm:text-xl text-center;
     text-shadow: 2px 1px #444444;
   }
 }

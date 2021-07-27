@@ -10,8 +10,6 @@ if ( have_posts() ):
 	</section>
 	<?php
 	get_template_part( 'template-parts/photo-gallery' );
-	get_template_part( 'template-parts/attractions' );
-	get_template_part( 'template-parts/ticket', 'main' );
 	get_template_part( 'template-parts/map' );
 endif;
 get_footer();

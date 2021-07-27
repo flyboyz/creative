@@ -1,0 +1,25 @@
+.white-list {
+  @apply container py-12 bg-white shadow-xl;
+  max-width: 900px;
+
+  h1, h2, h3, h4 {
+    @apply mb-2;
+  }
+
+  h1 {
+    @apply mb-10 text-sm;
+    line-height: 4.5rem;
+  }
+
+  h2 {
+    @apply mb-2 text-xl sm:text-2xl;
+  }
+
+  h3 {
+    @apply mb-2 text-lg sm:text-2xl;
+  }
+
+  h4 {
+    @apply mb-2 text-xl sm:text-3xl;
+  }
+}
