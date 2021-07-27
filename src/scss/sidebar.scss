@@ -1,9 +1,7 @@
 .sidebar {
-  @apply absolute w-full h-16 right-0 bg-white opacity-0;
+  @apply hidden absolute w-full h-16 right-0 bg-white;
   height: calc(100% - 4rem);
   top: 4rem;
-  transform: translateX(100%);
-  transition: .3s;
 
   @screen sm {
     height: calc(100% - 100px);
@@ -11,8 +9,7 @@
   }
 
   body.show-sidebar & {
-    @apply opacity-100;
-    transform: translateX(0);
+    @apply block;
   }
 
   body.admin-bar & {

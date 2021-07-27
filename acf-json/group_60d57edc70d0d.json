@@ -108,6 +108,25 @@
                     "step": ""
                 }
             ]
+        },
+        {
+            "key": "field_60ffd3e5111b6",
+            "label": "Координаты аттракциона",
+            "name": "coord",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "45.1884,33.3592",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -127,5 +146,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1627286019
+    "modified": 1627378725
 }

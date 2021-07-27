@@ -1,0 +1,7 @@
+.map {
+  height: 20rem;
+
+  @screen sm {
+    height: 35rem;
+  }
+}

@@ -7,14 +7,15 @@ $main-light: #f8a5c2;
 @import "sidebar";
 @import "footer";
 @import "card";
-@import "hero";
 @import "single";
-@import "faq";
+@import "white-list";
 
+@import "hero";
+@import "faq";
 @import "tickets";
 @import "covid";
 @import "companies";
-@import "white-list";
+@import "map";
 
 main {
   @apply flex flex-col;
