@@ -1,5 +1,5 @@
 .ticket {
-  @apply relative inline-flex mx-auto my-0 md:my-8 text-white;
+  @apply relative inline-flex mx-auto my-0 text-white;
 
   &::before {
     @apply absolute bg-gray-50;
@@ -12,7 +12,7 @@
 
     @screen md {
       @apply absolute left-auto w-auto h-auto right-0 top-0 font-heading bg-transparent text-yellow-300;
-      content: '-28%';
+      content: '-12%';
       color: #fcd34e;
       font-size: 80px;
       transform: translate(15%, -55%) rotate(15deg);

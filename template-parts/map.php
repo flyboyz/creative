@@ -1,6 +1,6 @@
 <?php
 $heading = is_single() ? 'Где находится ' . get_the_title() . '?' : 'Где мы находимся?';
-$coord   = get_field( 'coord' ) ?? '45.1884, 33.3592';
+$coord   = get_field( 'coord' );
 $zoom    = get_field( 'coord' ) ? 17 : 15;
 ?>
 <section class="p-0">
