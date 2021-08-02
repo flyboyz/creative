@@ -19,26 +19,26 @@
 						<li>Золотоискатели</li>
 						<li>Дом великана</li>
 					</ul>
-				</div>
-				<div class="ticket__calculator">
-					<div>
-						<div class="count-input">
-							<div class="minus cursor-pointer">-</div>
-							<span class="count">1</span>
-							<div class="plus cursor-pointer">+</div>
-						</div>
-						<span>&times;</span>
-						<div class="relative">
-							<span class="price-old"><span>1350</span>&#8381;</span>
-							<span class="price"><span>1200</span>&#8381;</span>
-						</div>
-					</div>
-					<div>
-						<span>=</span>
-						<span class="sum"><span>1200</span>&#8381;</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+                <div class="ticket__calculator">
+                    <div>
+                        <div class="count-input">
+                            <div class="minus cursor-pointer">-</div>
+                            <span class="count">1</span>
+                            <div class="plus cursor-pointer">+</div>
+                        </div>
+                        <span>&times;</span>
+                        <div class="relative">
+                            <span class="price-old"><span>1800</span>&#8381;</span>
+                            <span class="price"><span>1400</span>&#8381;</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span>=</span>
+                        <span class="sum"><span>1400</span>&#8381;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
